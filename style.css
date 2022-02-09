@@ -159,7 +159,7 @@ form button i{
 }
 
 
-#hebergementGeneral{
+#hebergementgeneral{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -174,16 +174,15 @@ form button i{
     padding-left: 20px;
 }
 
-#hebergementPopulaire{
+#titlepopulaire i{
+    font-size: 30px;
+    color: black;
+}
+#hebergementpopulaire{
     background-color:#F2F2F2 ;
     padding: 35px;
     border-radius: 20px;
    width: 30%;
-}
-
-#titlePopulaire i{
-    font-size: 30px;
-    color: black;
 }
 
 .annonceLigne{
@@ -192,60 +191,60 @@ form button i{
 
 
 
-.imgUn{
+.imgun{
     background-image: url(img/1.jpg);
 }
 
-.imgDeux{
+.imgdeux{
     background-image: url(img/2.jpg);
 }
 
-.imgTrois{
+.imgtrois{
     background-image: url(img/3.jpg);
 }
 
-.imgQuatre{
+.imgquatre{
     background-image: url(img/4.jpg);
 }
 
-.imgCinq{
+.imgcinq{
     background-image: url(img/5.jpg);
 }
 
-.imgSix{
+.imgsix{
     background-image: url(img/6.jpg);
 }
 
-.imgSept{
+.imgsept{
     background-image: url(img/7.jpg);
 }
 
-.imgHuit{
+.imghuit{
     background-image: url(img/8.jpg);
 }
 
-.imgNeuf{
+.imgneuf{
     background-image: url(img/9.jpg);
 }
 
-.imgUn, .imgDeux, .imgTrois, .imgQuatre, .imgCinq, .imgSix{
+.imgun, .imgdeux, .imgtrois, .imgquatre, .imgcinq, .imgsix{
     width: 400px;
     height: 150px;
     background-position: center;
     
 }
 
-.annonceInfo h3{
+.annonceinfo h3{
     margin: 0;
 }
 
 
-.annonceInfo{
+.annonceinfo{
     margin: 15px
 }
 
 
-.annoncePopulaire{
+.annoncepopulaire{
     margin: 75px 0px 20px 0px;
     display: flex;
     flex-direction: row;
@@ -257,7 +256,7 @@ form button i{
 
 }
 
-.annonceInfoPopulaire{
+.annonceinfopopulaire{
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -265,21 +264,21 @@ form button i{
     justify-content: space-between;
 }
 
-.annonceInfoPopulaire h3{
+.annonceinfopopulaire h3{
     margin: 0;
 }
 
-#titlePopulaire{
+#titlepopulaire{
     display: flex; 
     flex-direction: row; 
     justify-content: space-between;
     align-items: center;
 }
-#titlePopulaire h2{
+#titlepopulaire h2{
     margin: 0;
 }
 
-.imgSept, .imgHuit, .imgNeuf{
+.imgsept, .imghuit, .imgneuf{
     width: 250px;
     height: auto;
     background-size:cover;
@@ -288,16 +287,16 @@ form button i{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
 
-    #hebergementPopulaire{
+    #hebergementpopulaire{
         background-color:#F2F2F2 ;
         border-radius: 0;
         width: 100%;
 
     }
 
-    .imgSept, .imgHuit, .imgNeuf{
+    .imgsept, .imghuit, .imgneuf{
         width: 275px;
         height: auto;
     }
@@ -307,17 +306,17 @@ form button i{
         background-color: white;
     }
 
-    .annonceLigne{
+    .annonceligne{
         justify-content: center;
     }
-    .annonceLigne a{
+    .annonceligne a{
         width: 100%;
     }
     .annonce{
         width: 100%;
         margin: 20px 0px;
     }
-    .imgUn, .imgDeux, .imgTrois, .imgQuatre, .imgCinq, .imgSix{
+    .imgun, .imgdeux, .imgtrois, .imgquatre, .imgcinq, .imgsix{
        
         width: auto;
         

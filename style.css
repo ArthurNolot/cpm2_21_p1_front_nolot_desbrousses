@@ -1,0 +1,462 @@
+i {
+    color: blue ;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav div ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav div ul li {
+    list-style: none;
+    padding: 30px;
+
+}
+
+
+  .titre:hover a {
+    color: red ;
+    transition: all 0.2s;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    nav ul{
+        padding: 0;
+    }
+ 
+}
+
+
+form{
+    padding: 20px 0px 20px 0px;
+    display: flex;
+}
+
+  label{
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#localisation{
+
+    width: 250px;
+}
+
+
+form button{
+    color: white;
+    background-color:#0065FC ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+form button i{
+    display: none !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    form{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+   
+
+
+ 
+
+    
+}
+
+
+#filtres{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.icons{
+    display: flex;
+    border-radius: 40px;
+    border: solid 2px rgb(201, 201, 201);
+    margin: 0px 20px 0px 20px ;
+}
+
+.icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;   
+}
+
+.icons:before {
+    content: "";
+    border-radius: 40px;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    background-color: #0065FC;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+  }
+  
+
+
+    .icons:hover p {
+        color: red;
+    }
+
+
+#info{
+    display: flex;
+    align-items: center;
+    margin:30px
+}
+
+#info i{
+    color: #0065FC;
+    padding: 5px;
+    border-radius: 20px;
+    height: 18px;
+    border: solid 2px#d6d6d6;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+#info p {
+    padding-left: 10px;
+}
+
+
+#hebergementGeneral{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+#hebergement{
+    background-color:#F2F2F2 ;
+   width: 60%;
+}
+
+#hebergement h2 {
+    padding-left: 20px;
+}
+
+#hebergementPopulaire{
+    background-color:#F2F2F2 ;
+    padding: 35px;
+    border-radius: 20px;
+   width: 30%;
+}
+
+#titlePopulaire i{
+    font-size: 30px;
+    color: black;
+}
+
+.annonceLigne{
+    display:inline-block;
+}
+
+
+
+.imgUn{
+    background-image: url(img/1.jpg);
+}
+
+.imgDeux{
+    background-image: url(img/2.jpg);
+}
+
+.imgTrois{
+    background-image: url(img/3.jpg);
+}
+
+.imgQuatre{
+    background-image: url(img/4.jpg);
+}
+
+.imgCinq{
+    background-image: url(img/5.jpg);
+}
+
+.imgSix{
+    background-image: url(img/6.jpg);
+}
+
+.imgSept{
+    background-image: url(img/7.jpg);
+}
+
+.imgHuit{
+    background-image: url(img/8.jpg);
+}
+
+.imgNeuf{
+    background-image: url(img/9.jpg);
+}
+
+.imgUn, .imgDeux, .imgTrois, .imgQuatre, .imgCinq, .imgSix{
+    width: 400px;
+    height: 150px;
+    background-position: center;
+    
+}
+
+.annonceInfo h3{
+    margin: 0;
+}
+
+
+.annonceInfo{
+    margin: 15px
+}
+
+
+.annoncePopulaire{
+    margin: 75px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(218, 219, 235);
+
+}
+
+.annonceInfoPopulaire{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.annonceInfoPopulaire h3{
+    margin: 0;
+}
+
+#titlePopulaire{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+}
+#titlePopulaire h2{
+    margin: 0;
+}
+
+.imgSept, .imgHuit, .imgNeuf{
+    width: 250px;
+    height: auto;
+    background-size:cover;
+    border-radius: 18px 0px 0px 18px;
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #hebergementPopulaire{
+        background-color:#F2F2F2 ;
+        border-radius: 0;
+        width: 100%;
+
+    }
+
+    .imgSept, .imgHuit, .imgNeuf{
+        width: 275px;
+        height: auto;
+    }
+
+    #hebergement{
+        width: 100%;
+        background-color: white;
+    }
+
+    .annonceLigne{
+        justify-content: center;
+    }
+    .annonceLigne a{
+        width: 100%;
+    }
+    .annonce{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .imgUn, .imgDeux, .imgTrois, .imgQuatre, .imgCinq, .imgSix{
+       
+        width: auto;
+        
+    }
+
+    #hebergement h2 {
+        padding-left: 0px;
+    }
+    
+}
+
+#activite{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.activiteBox{
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width:100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(218, 219, 235);
+
+}
+
+.boxLinkActiviteBox{
+    width: 20%;
+}
+
+.activiteBoxSmall{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(218, 219, 235);
+    margin-bottom: 40px;
+}
+
+.activiteBoxExtraSmall{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(218, 219, 235);
+}
+
+.activiteImgUn{
+    background-image: url(img/11.jpg);
+}
+.activiteImgDeux{
+    background-image: url(img/12.jpg);
+}
+.activiteImgTrois{
+    background-image: url(img/13.jpg);
+}
+
+.activiteImgQuatre{
+    background-image: url(img/14.jpg);
+}
+
+.activiteImgCinq{
+        background-image: url(img/15.jpg);
+    }
+
+.activiteImgSix{
+    background-image: url(img/16.jpg);
+}
+
+.activiteImgUn, .activiteImgQuatre{
+    
+    height: 450px;
+    background-size:cover;
+    background-position: center;
+}
+
+.activiteImgDeux, .activiteImgCinq{
+    width: 100%;
+    height: 250px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 18px 18px 0px 0px;
+  
+}
+
+.activiteImgTrois, .activiteImgSix{
+    width: 100%;
+    height: 200px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 18px 18px 0px 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+.activiteBox, .activiteBoxExtraSmall, .activiteBoxSmall, .smallBox{
+    width: 100%;
+  
+}
+.activiteBox, .activiteBoxExtraSmall, .activiteBoxSmall{
+    height: 250px;
+    margin: 20px 0px;
+}
+
+.boxLinkActiviteBox{
+    width: 100%;
+}
+    
+}
+
+
+footer{
+    display: flex;
+   
+    flex-direction: row;
+   padding-left: 30px;
+    background-color:#F2F2F2 ; 
+
+}
+
+
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    
+}
+
+
+
